@@ -6,8 +6,8 @@ buildscript {
         springBootVersion = '1.5.3.RELEASE'
     }
     repositories {
-        maven { url 'http://ip-172-31-32-110.ap-northeast-1.compute.internal:8081/repository/maven-public/' }
-//        mavenCentral()
+        maven { url 'http://nexus.daocloud.io:8081/repository/maven-public/' }
+        mavenCentral()
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -22,8 +22,8 @@ apply plugin: 'org.springframework.boot'
 sourceCompatibility = 1.8
 
 repositories {
-    maven { url 'http://ip-172-31-32-110.ap-northeast-1.compute.internal:8081/repository/maven-public/' }
-//    mavenCentral()
+    maven { url 'http://nexus.daocloud.io:8081/repository/maven-public/' }
+    mavenCentral()
 }
 
 dependencies {
