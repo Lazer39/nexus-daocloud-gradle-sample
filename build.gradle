@@ -6,8 +6,7 @@ buildscript {
         springBootVersion = '1.5.3.RELEASE'
     }
     repositories {
-        maven { url 'http://nexus.daocloud.io:8081/repository/maven-public/' }
-        //优先使用Nexus由于内网不可访问，在个人开发中会使用中心仓库
+        maven { url 'http://nexus.daocloud.io/repository/maven-public/' }
         mavenCentral()
     }
     dependencies {
@@ -23,7 +22,7 @@ apply plugin: 'org.springframework.boot'
 sourceCompatibility = 1.8
 
 repositories {
-    maven { url 'http://nexus.daocloud.io:8081/repository/maven-public/' }
+    maven { url 'http://nexus.daocloud.io/repository/maven-public/' }
     mavenCentral()
 }
 
